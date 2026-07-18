@@ -1,0 +1,106 @@
+:root {
+    color-scheme: light;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+    color: #233142;
+}
+
+.container {
+    width: min(1100px, calc(100% - 2rem));
+    margin: 0 auto;
+}
+
+.hero-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%);
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.15rem;
+    opacity: 0.95;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.25rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #7c3aed 0%, #8b5cf6 100%);
+    color: white;
+}
+
+.btn-outline-primary {
+    color: white;
+    border: 1px solid white;
+}
+
+.card {
+    background: white;
+    border-radius: 1.25rem;
+    box-shadow: 0 1rem 2rem rgba(124, 58, 237, 0.12);
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-form {
+    max-width: 520px;
+    margin: 2rem auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    padding: 0.8rem 0.95rem;
+    border: 1px solid #d8c9f6;
+    border-radius: 0.75rem;
+    font: inherit;
+}
+
+.footer {
+    padding: 2rem 0 3rem;
+    text-align: center;
+    color: #6b7280;
+}

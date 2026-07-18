@@ -1,0 +1,88 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+    color: #233142;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #7c3aed 0%, #8b5cf6 100%);
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%);
+    color: white;
+}
+
+.hero-section .lead,
+.hero-section .text-muted {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 2rem rgba(124, 58, 237, 0.12) !important;
+}
+
+.stat-icon {
+    font-size: 2rem;
+    background: #f3ebff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+}
+
+.footer {
+    background: #f8f5ff;
+    border-top: 1px solid #e8defe;
+}
+
+.form-control:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.2);
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #7c3aed 0%, #8b5cf6 100%);
+    border: none;
+}
+
+.btn-outline-primary {
+    color: #7c3aed;
+    border-color: #7c3aed;
+}
+
+.btn-outline-primary:hover {
+    background-color: #7c3aed;
+    color: white;
+}
+
+.table thead {
+    background: #f8f5ff;
+}
+
+body.dark-mode {
+    background: #1a102c;
+    color: #f9fafb;
+}
+
+body.dark-mode .card,
+body.dark-mode .navbar,
+body.dark-mode .footer,
+body.dark-mode .hero-section {
+    background: #2a2143;
+    color: #f9fafb;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .table,
+body.dark-mode .btn-outline-primary {
+    background: #3f3158;
+    color: #f9fafb;
+    border-color: #6d5fa8;
+}
