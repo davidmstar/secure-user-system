@@ -10,22 +10,97 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header class="hero-section">
+    <header class="hero-section" id="home">
         <div class="container">
-            <h1>Secure User Management and Contact System</h1>
-            <p class="lead">Welcome to your secure portal.</p>
-            <div class="button-row">
-                <a href="register.html" class="btn btn-primary">Register</a>
-                <a href="login.html" class="btn btn-outline-primary">Login</a>
+            <nav class="site-nav">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#register">Register</a>
+                <a href="#login">Login</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="hero-content">
+                <h1>Secure User Management and Contact System</h1>
+                <p class="lead">One page experience with secure account creation, login, and contact capabilities.</p>
+                <div class="button-row">
+                    <a href="#register" class="btn btn-primary">Register</a>
+                    <a href="#login" class="btn btn-outline-primary">Login</a>
+                </div>
             </div>
         </div>
     </header>
 
     <main class="container py-5">
-        <section class="card">
+        <section id="features" class="section">
+            <div class="section-title">
+                <h2>Application Sections</h2>
+                <p class="text-muted">Everything is bundled into this single page for GitHub Pages deployment.</p>
+            </div>
+            <div class="grid-3 gap-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Secure Authentication</h3>
+                        <p>Mock registration and login forms demonstrate how users can interact with the application in a single page setup.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Modern UI</h3>
+                        <p>A simple, responsive interface styled with custom CSS and flexible layout elements.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Static Hosting</h3>
+                        <p>Designed for GitHub Pages, this page contains all content in a single index file.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="register" class="section card card-form">
             <div class="card-body">
-                <h2>GitHub Pages version</h2>
-                <p>This static deployment keeps the same visual style and gives you a lightweight landing experience for GitHub Pages.</p>
+                <h2>Register</h2>
+                <p>Enter your details to create an account placeholder.</p>
+                <form>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Your name">
+                    <label for="email-register">Email</label>
+                    <input id="email-register" type="email" placeholder="you@example.com">
+                    <label for="password-register">Password</label>
+                    <input id="password-register" type="password" placeholder="********">
+                    <button type="submit" class="btn btn-primary">Create account</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="login" class="section card card-form">
+            <div class="card-body">
+                <h2>Login</h2>
+                <p>Use the form below to sign in to the static demo.</p>
+                <form>
+                    <label for="email-login">Email</label>
+                    <input id="email-login" type="email" placeholder="you@example.com">
+                    <label for="password-login">Password</label>
+                    <input id="password-login" type="password" placeholder="********">
+                    <button type="submit" class="btn btn-primary">Log in</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact" class="section card card-form">
+            <div class="card-body">
+                <h2>Contact</h2>
+                <p>Send a message using the static contact form placeholder.</p>
+                <form>
+                    <label for="contact-name">Name</label>
+                    <input id="contact-name" type="text" placeholder="Your name">
+                    <label for="contact-email">Email</label>
+                    <input id="contact-email" type="email" placeholder="you@example.com">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" rows="5" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                </form>
             </div>
         </section>
     </main>

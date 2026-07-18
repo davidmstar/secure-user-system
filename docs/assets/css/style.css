@@ -18,11 +18,38 @@ body {
     margin: 0 auto;
 }
 
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.site-nav a {
+    color: rgba(255, 255, 255, 0.95);
+    text-decoration: none;
+    padding: 0.65rem 0.8rem;
+    border-radius: 999px;
+    transition: background 0.2s ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    background: rgba(255, 255, 255, 0.12);
+}
+
 .hero-section {
-    padding: 5rem 0;
+    padding: 5rem 0 4rem;
     background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%);
     color: white;
     text-align: center;
+}
+
+.hero-content {
+    max-width: 760px;
+    margin: 0 auto;
 }
 
 .hero-section h1 {
@@ -33,6 +60,7 @@ body {
 .lead {
     font-size: 1.15rem;
     opacity: 0.95;
+    margin-bottom: 1.5rem;
 }
 
 .button-row {
@@ -59,11 +87,35 @@ body {
 .btn-primary {
     background: linear-gradient(90deg, #7c3aed 0%, #8b5cf6 100%);
     color: white;
+    border: none;
 }
 
 .btn-outline-primary {
     color: white;
     border: 1px solid white;
+}
+
+.section {
+    margin-top: 2.5rem;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 1.75rem;
+}
+
+.section-title h2 {
+    margin-bottom: 0.5rem;
+}
+
+.text-muted {
+    color: #6b7280;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
 }
 
 .card {
@@ -78,7 +130,7 @@ body {
 }
 
 .card-form {
-    max-width: 520px;
+    max-width: 640px;
     margin: 2rem auto;
 }
 
@@ -92,15 +144,26 @@ label {
     font-weight: 600;
 }
 
-input {
+input,
+textarea {
     padding: 0.8rem 0.95rem;
     border: 1px solid #d8c9f6;
     border-radius: 0.75rem;
     font: inherit;
 }
 
+textarea {
+    resize: vertical;
+}
+
 .footer {
     padding: 2rem 0 3rem;
     text-align: center;
     color: #6b7280;
+}
+
+@media (max-width: 640px) {
+    .site-nav {
+        gap: 0.5rem;
+    }
 }
